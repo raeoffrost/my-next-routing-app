@@ -1,0 +1,27 @@
+.form {
+  border: 2px solid rgb(81, 70, 94);
+  border-radius: 5px;
+  min-width: 300px;
+  background-color: rgb(25, 27, 32);
+}
+.form input {
+  margin-bottom: 10px;
+}
+.form label input {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid rgb(145, 145, 145);
+  margin-bottom: 10px;
+  background-color: blueviolet;
+}
+.form .error {
+  border: 2px solid red;
+}
+.form label {
+  font-weight: bold;
+  padding: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
