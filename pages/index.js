@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const posts = [
+const postsArr = [
   {
     id: 1,
     name: "Weather News",
@@ -80,8 +80,8 @@ export default function Home() {
           <h3>Home + Blog Posts</h3>
           <p> Check out the posts that display dynamic routing using the links below.</p>
           <ul style={navStyle}>
-            {posts.map((post) => (
-              <Link href={`/posts/${post.id}`}>
+            {postsArr.map((post) => (
+              <Link key={post.id} href={`/posts/${post.id}`}>
                 <div style={postBox}>
                   <h4 style={{ color: "rgb(196, 170, 226)" }}>{post.name}</h4>
                   <br />
